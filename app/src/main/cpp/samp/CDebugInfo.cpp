@@ -33,7 +33,7 @@ void CDebugInfo::Render(UI* pUI)
     if (!m_pLabel)
     {
         m_pLabel = new Label(szStr, ImColor(1.0f, 1.0f, 1.0f), true, UISettings::fontSize() / 2);
-        pUI->addChild(m_pLabel);
+//         pUI->addChild(m_pLabel);
     }
 
     m_pLabel->setText(szStr);
@@ -55,7 +55,7 @@ void CDebugInfo::Shutdown(UI* pUI)
 {
     if (m_pLabel)
     {
-        pUI->removeChild(m_pLabel);
+//         pUI->removeChild(m_pLabel);
         delete m_pLabel;
         m_pLabel = nullptr;
     }
