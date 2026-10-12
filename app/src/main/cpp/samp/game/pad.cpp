@@ -1,3 +1,4 @@
+#include "../gui/samp_widgets/playerlist.h"
 #include "../main.h"
 #include "game.h"
 #include "../net/netgame.h"
