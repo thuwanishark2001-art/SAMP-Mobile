@@ -64,11 +64,11 @@ public:
     }
 
     float ScaleX(float x) {
-        return x * displaySize().x * (1.0f / 1920.0f);
+        return x * ImGui::GetIO().DisplaySize.x * (1.0f / 1920.0f);
     }
 
     float ScaleY(float y) {
-        return y * displaySize().y * (1.0f / 1080.0f);
+        return y * ImGui::GetIO().DisplaySize.y * (1.0f / 1080.0f);
     }
 
     float GetFontSize() {
